@@ -1,16 +1,24 @@
+/* nav */
+.navbar-brand {
+  font-size: 3rem;
+}
+
+.page-heading {
+}
 
 
-/********** Desktop **********/
+
+/********** Desktop (md) **********/
 @media (min-width: 992px) {
 
 }
 
-/********** Tablet **********/
+/********** Tablet (sm) **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
 }
 
-/********** Mobile **********/
+/********** Mobile (xs) **********/
 @media (max-width: 767px) {
 
 }
