@@ -1,12 +1,64 @@
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 70px;
+  background: #222222;
+  font-family: "Courier New", Courier, monospace;
+}
+
 /* nav */
 .navbar-brand {
   font-size: 3rem;
+  font-weight: bold;
 }
 
-.page-heading {
+.page-title {
+  margin-top: -50px;
+  padding-top: 50px;
+  color: #e7e7e7;
+  font-weight: bold;
 }
 
+/* main content */
 
+/* navbar-fixed-topに設定すると、ページ内リンクに飛んだ先の要素の上にnavが覆いかぶさってしまう。
+ * negative marginとpaddingを設定することで解決。
+ */
+.tile-wrapper {
+  margin-top: -50px;
+  padding: 1rem;
+  padding-top: calc(50px + 1rem);
+}
+
+.tile {
+  padding: 0.5rem;
+  background: #91dbb9;
+}
+
+.tile-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.tile-description {
+  font-size: 1.0rem;
+}
+
+/* .tile-wrapperにネガティブマージンをセットしたことにより要素が重なってリンクがクリックできなくなる。
+ * z-indexを指定することにより解消する。
+ */
+.back-to-top > a {
+  position: relative;
+  z-index: 300;
+  color: #b94e8a;
+}
 
 /********** Desktop (md) **********/
 @media (min-width: 992px) {
