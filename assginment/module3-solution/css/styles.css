@@ -57,7 +57,9 @@ body {
 .back-to-top > a {
   position: relative;
   z-index: 300;
-  color: #b94e8a;
+  color: #4b0082;
+  font-size: 0.8rem;
+  text-decoration: underline;
 }
 
 /********** Desktop (md) **********/
@@ -67,11 +69,41 @@ body {
 
 /********** Tablet (sm) **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
 
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .tile-title {
+    font-size: 1.5rem;
+  }
 }
 
 /********** Mobile (xs) **********/
 @media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
 
+  .navbar-default .navbar-nav > li > a {
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    background: #222222;
+    color: #e7e7e7;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .tile-title {
+    font-size: 1.25rem;
+  }
 }
 
